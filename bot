@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bot telegram
-TOKEN_BOT="5060855938:AAGEghPMywY54HWtE3PsO2NxGCqqBgecRqo"
-CHAT_ID="1178201791"
+TOKEN_BOT="xxx"
+CHAT_ID="xxx"
 HOST=$(cat logremot.txt|grep tunneled|awk '{print $1}')
 PESAN="Form server <b>$(hostname)</b>"
 IP=$(curl -s http://tnx.nl/ip)
