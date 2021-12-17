@@ -3,3 +3,4 @@
 rm -rf logremot.txt
 screen -d -m remot
 screen -dmS remot -L -Logfile logremot.txt ssh -i remot -o StrictHostKeyChecking=no -R 80:localhost:80 localhost.run
+clear
