@@ -5,6 +5,6 @@ CHAT_ID="1178201791"
 HOST=$(cat logremot.txt|grep tunneled|awk '{print $1}')
 PESAN="Form server <b>$(hostname)</b>"
 IP=$(curl -s http://tnx.nl/ip)
-LINK="Your Link: $HOST"
-curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=$PESAN%0A $IP%0A $LINK"
+
+curl -s -X POST "https://api.telegram.org/bot$TOKEN_BOT/sendmessage" -d "chat_id=$CHAT_ID" -d "parse_mode=html" -d "text=$PESAN%0A $IP%0A $HOST"
 clear
