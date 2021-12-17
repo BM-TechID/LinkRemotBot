@@ -3,4 +3,3 @@
 apt update && apt install -y openssh-server screen wget curl
 echo y|ssh-keygen -t ed25519 -f remot -N ""
 clear
-echo "Done..."
