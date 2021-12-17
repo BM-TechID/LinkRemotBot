@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#untuk installer
+apt update && apt install -y openssh-server screen wget curl
+ssh-keygen -t ed25519 -f .ssh/remot
+clear
+echo "Done..."
